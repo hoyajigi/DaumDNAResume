@@ -11,6 +11,7 @@ textarea {
 }
 
 body {
+    font-family:"돋움", dotum, Helvetica, sans-serif;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -223,6 +224,86 @@ textarea {
 }
 .container { padding: 400px 200px; 
     /* This gives our headings a bit of breathing room */ } 
-.js-background-1 { background: transparent url(../background1.png) center 0 no-repeat; } 
-.js-background-2 { background: transparent url(../background2.png) center 0 no-repeat; }
 
+
+/* PC */
+.pc-wrap {
+    width:100%;
+    /*min-width:1000px;*/
+    display:block;
+}
+
+/* PC : 본문 */
+.pc-wrap article {
+    width:100%;
+}
+
+/* PC : 본문 영역 */
+.pc-wrap .content-area {
+    positIon:relative;  
+    overflow:hidden;
+}
+
+
+/* PC : 본문 영역 : 상세 영역 */
+.pc-wrap .content-area .detail-area {
+    width:100%;
+    min-width:1000px;
+}
+
+/* PC : 본문 영역 : 상세 영역 : 상세 영역 테두리 */
+.pc-wrap .content-area .detail-area .detail-area-wrap {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:1070px;
+    height:690px;
+    margin:-342px 0 0 -500px;
+    overflow:hidden;
+}
+
+/* PC : 본문 영역 : 상세 영역 : 상세 테두리 */
+.pc-wrap .content-area .detail-area .detail-wrap {
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+
+/* PC : 본문 영역 : 상세 영역 : 상세 테두리 첫번째 */
+.pc-wrap .content-area .detail-area .detail-wrap.detail-01 {
+    top:0;
+    left:0;
+}
+
+/* PC : 본문 영역 : 상세 영역 : 상세 테두리 두번째 */
+.pc-wrap .content-area .detail-area .detail-wrap.detail-02 {
+    top:0;
+    left:0;
+    z-index:16;
+}
+
+/* PC : 본문 영역 : 상세 영역 : 상세 테두리 세번째 */
+.pc-wrap .content-area .detail-area .detail-wrap.detail-03 {
+    top:0;
+    left:0;
+    z-index:17;
+}
+
+/* PC : 본문 영역 : 상세 영역 : 상세 테두리 네번째 */
+.pc-wrap .content-area .detail-area .detail-wrap.detail-04 {
+    top:0;
+    left:0;
+    z-index:18;
+}
+
+/* PC : 본문 영역 : 상세 영역 : 상세 테두리 다섯째 */
+.pc-wrap .content-area .detail-area .detail-wrap.detail-05 {
+    top:0;
+    left:0;
+    z-index:999;
+}
+
+/* 숨김 */
+.show-none {
+    display:none;
+}
