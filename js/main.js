@@ -263,7 +263,7 @@ function stateValueAction(state) {
 
 
 	// 아래로 이동시
-	if (state == "down" && jQuery(window).scrollTop() != jQuery(section03).offset().top && scrolling == "no") {
+	if (state == "down" && jQuery(window).scrollTop() != jQuery(section05).offset().top && scrolling == "no") {
 		// 이동해야 되는 영역
 		var sectionAction = "";
 
